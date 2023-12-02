@@ -56,9 +56,34 @@ Undefined :  Undefined
 Symbol    :  Symbol
 BigInt    :  BigInt
 
-B. Return type of variables in Non Premitive datatypes
+B. Return type of variables in Non Premitive datatypes/Reference Type
 
 Array     : Object 
 Object    : Object
 Function  : Function(Object)
 */
+
+/* ********* Memory **********
+
+Types of Memory :-
+(1) Stack memory, (Used in Primitive) = we get copy (creates a copy of updated value) 
+(2) Heap memory (Non Primitive) = we get reference (means update in original value)
+
+*/
+let myYtName = "Herry Malviya"
+let anotherName = myYtName
+anotherName = "Harish malviya"
+
+console.log(myYtName);
+console.log(anotherName);
+
+let user1 = {
+    email: "herrymlv@google.com",
+    upi: "herry@ybl"
+}
+
+let user2 = user1
+user2.email = "harishmlv@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
