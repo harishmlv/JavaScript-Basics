@@ -54,13 +54,49 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // extract keys from object tinderUser
-console.log(Object.values(tinderUser)); // extract values from object tinderUser
-console.log(Object.entries(tinderUser)); // entries = Rarely used 
+// console.log(Object.keys(tinderUser)); // extract keys from object tinderUser
+// console.log(Object.values(tinderUser)); // extract values from object tinderUser
+// console.log(Object.entries(tinderUser)); // entries = Rarely used 
 
 // check if property available or not in the object 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) // isLoggedIn availbale in tinderUser obj. or not = True
-console.log(tinderUser.hasOwnProperty('isLogged')) // isLoggedIn availbale in tinderUser obj. or not = False
+//console.log(tinderUser.hasOwnProperty('isLoggedIn')) // isLoggedIn availbale in tinderUser obj. or not = True
+//console.log(tinderUser.hasOwnProperty('isLogged')) // isLoggedIn availbale in tinderUser obj. or not = False
+
+/************* De - Structuring ******************************/
+
+const course = {
+    courseName : "JS learning",
+    price : "999",
+    courseTeacher: "Harish"
+}
+
+// console.log(course); // simple way to print course object data 
+
+// const {courseTeacher} = course   // Better way to print object
+// console.log(courseTeacher);
+
+const {courseTeacher: Teacher} = course   // We can change the keys name and print it
+console.log(Teacher); 
+
+/************* API fetch ***************************************************************/
+
+/* JSON 
+
+{
+   "name"       : "Harish",
+   "coursename" : "JS Learning",
+   "email"      : "hm@google.com"  
+} 
+
+// in Array form
+
+[
+  {},
+  {},
+  {}
+]
+
+*/
