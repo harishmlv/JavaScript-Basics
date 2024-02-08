@@ -6,10 +6,21 @@
     <title>Document</title>
 </head>
 <body>  
-    <h1>Chai or Javascript</h1>
+    <h1>Async Project 1 </h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
-</body>
+
 <script>
+    document.querySelector("#start").addEventListener("click",function(){
+       const start = function(){
+       console.log("Herry", Date.now());
+    };
+    const toStop = setInterval(start, 1000, (click = start));
+    document.querySelector("#stop").addEventListener("click", function(){
+        clearInterval(toStop);
+    });
+});
+
 </script>
+</body>
 </html>
