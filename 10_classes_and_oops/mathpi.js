@@ -20,8 +20,7 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 Object.defineProperty(chai, 'name', {
     //writable: false,
-    enumerable: true,
-    
+    enumerable: true,   
 })
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
